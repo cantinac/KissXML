@@ -39,7 +39,7 @@
  * All of these are pointers to structures, and all of those structures start with a pointer, and a type.
  * The xmlKind struct is used as a generic structure, and a stepping stone.
  * We use it to check the type of a structure, and then perform the appropriate cast.
- * 
+ *
  * For example:
  * if(genericPtr->type == XML_ATTRIBUTE_NODE)
  * {
@@ -82,9 +82,9 @@ NS_INLINE BOOL IsXmlNodePtr(void *kindPtr)
 	switch (((xmlKindPtr)kindPtr)->type)
 	{
 		case XML_ELEMENT_NODE       :
-		case XML_PI_NODE            : 
-		case XML_COMMENT_NODE       : 
-		case XML_TEXT_NODE          : 
+		case XML_PI_NODE            :
+		case XML_COMMENT_NODE       :
+		case XML_TEXT_NODE          :
 		case XML_CDATA_SECTION_NODE : return YES;
 		default                     : return NO;
 	}
@@ -133,14 +133,14 @@ NS_INLINE BOOL IsXmlNsPtr(void *kindPtr)
 @interface DDXMLAttributeNode : DDXMLNode
 {
 	// The xmlAttrPtr type doesn't allow for ownership of a namespace.
-	// 
+	//
 	// In other types, such as xmlNodePtr:
 	// - nsDef stores namespaces that are owned by the node (have been alloced by the node).
 	// - ns is simply a pointer to the default namespace of the node, which may or may not reside in its own nsDef list.
-	// 
+	//
 	// The xmlAttrPtr only has a ns, it doesn't have a nsDef list.
 	// Which completely makes sense really, since namespaces have to be defined elsewhere.
-	// 
+	//
 	// This is here to maintain compatibility with the NSXML classes,
 	// where one can assign a namespace to an attribute independently.
 	xmlNsPtr attrNsPtr;

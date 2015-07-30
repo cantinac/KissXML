@@ -21,9 +21,9 @@
 {
 	NSMutableString *mStr = [self mutableCopy];
 	CFStringTrimWhitespace((__bridge CFMutableStringRef)mStr);
-	
+
 	NSString *result = [mStr copy];
-	
+
 	return result;
 }
 #endif
