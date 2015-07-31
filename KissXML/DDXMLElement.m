@@ -1,4 +1,9 @@
+
+#import "DDXMLElement.h"
+
 #import "DDXMLPrivate.h"
+#import "DDXMLDocument.h"
+
 #import "NSString+DDXML.h"
 
 #if ! __has_feature(objc_arc)

@@ -1,8 +1,11 @@
+
+#include <libxml/xpath.h>
+#include <libxml/xpathInternals.h>
+
+#import "DDXMLNode.h"
+
 #import "DDXMLPrivate.h"
 #import "NSString+DDXML.h"
-
-#import <libxml/xpath.h>
-#import <libxml/xpathInternals.h>
 
 #if ! __has_feature(objc_arc)
 #warning This file must be compiled with ARC. Use -fobjc-arc flag (or convert project to ARC).

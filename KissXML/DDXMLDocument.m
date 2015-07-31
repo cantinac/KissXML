@@ -1,3 +1,10 @@
+
+#include <libxml/tree.h>
+#include <libxml/xmlstring.h>
+
+#import "DDXMLDocument.h"
+
+#import "DDXMLElement.h"
 #import "DDXMLPrivate.h"
 #import "NSString+DDXML.h"
 

@@ -1,6 +1,7 @@
-#import <Foundation/Foundation.h>
-#import <libxml/tree.h>
 
+#include <libxml/tree.h>
+
+#import <Foundation/Foundation.h>
 
 @interface NSString (DDXML)
 

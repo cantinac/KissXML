@@ -20,8 +20,6 @@
 #import "DDXMLElement.h"
 #import "DDXMLDocument.h"
 
-
-
 #if TARGET_OS_IPHONE && 0 // Disabled by default
 
 // Since KissXML is a drop in replacement for NSXML,

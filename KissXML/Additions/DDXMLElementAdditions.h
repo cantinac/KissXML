@@ -1,5 +1,7 @@
+
 #import <Foundation/Foundation.h>
-#import "DDXML.h"
+
+#import "DDXMLElement.h"
 
 // These methods are not part of the standard NSXML API.
 // But any developer working extensively with XML will likely appreciate them.
