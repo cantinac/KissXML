@@ -1087,7 +1087,7 @@ static void MarkDeath(void *xmlPtr, DDXMLNode *wrapper);
 	}
 	else
 	{
-		if (prefixPtr)    *prefixPtr    = @"";
+		if (prefixPtr)    *prefixPtr    = nil;
 		if (localNamePtr) *localNamePtr = nil;
 	}
 }
