@@ -2,7 +2,7 @@
 #include <libxml/tree.h>
 #include <libxml/xmlstring.h>
 
-#import "DDXMLDocument.h"
+#import <KissXML/DDXMLDocument.h>
 
 // We can't rely solely on NSAssert, because many developers disable them for release builds.
 // Our API contract requires us to keep these assertions intact.

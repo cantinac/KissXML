@@ -1,5 +1,5 @@
 
-#import "DDXMLElementAdditions.h"
+#import <KissXML/DDXMLElementAdditions.h>
 
 @implementation DDXMLElement (DDAdditions)
 
