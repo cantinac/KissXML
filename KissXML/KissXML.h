@@ -6,7 +6,7 @@
 //
 //
 
-#import <Cocoa/Cocoa.h>
+@import Foundation;
 
 //! Project version number for KissXML.
 FOUNDATION_EXPORT double KissXMLVersionNumber;
