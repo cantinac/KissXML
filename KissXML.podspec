@@ -16,7 +16,8 @@ Pod::Spec.new do |s|
   s.source_files         = "KissXML/**/*.{h,m}"
   s.private_header_files = "KissXML/Private/*.h"
 
-  s.requires_arc        = true
-  s.libraries           = 'xml2'
-  s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
+  s.requires_arc         = true
+  s.libraries            = 'xml2'
+  s.pod_target_xcconfig  = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
+  s.user_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
 end
