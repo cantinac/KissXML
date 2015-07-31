@@ -1,6 +1,4 @@
 
-#include <libxml/tree.h>
-
 #import <Foundation/Foundation.h>
 
 @class DDXMLDocument;
