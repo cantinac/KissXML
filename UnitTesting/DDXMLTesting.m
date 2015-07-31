@@ -242,9 +242,9 @@ static DDAssertionHandler *ddAssertionHandler;
 	
 	NSString *nsTest5 = [NSXMLNode prefixForName:nil];
 	NSString *ddTest5 = [DDXMLNode prefixForName:nil];
-	
-	NSAssert([nsTest5 isEqualToString:ddTest5], @"Failed test 5");
-	
+
+    NSAssert(!nsTest5 && !ddTest5, @"Failed test 5");
+
 	NSXMLNode *nsNode = [NSXMLNode namespaceWithName:@"tucker" stringValue:@"dog"];
 	DDXMLNode *ddNode = [DDXMLNode namespaceWithName:@"tucker" stringValue:@"dog"];
 	
@@ -2049,21 +2049,27 @@ static DDAssertionHandler *ddAssertionHandler;
 	
 	NSXMLNode *nsNode = [[NSXMLNode alloc] init];
 	DDXMLNode *ddNode = [[DDXMLNode alloc] init];
-	
+    BOOL nsNodeFlag = YES;
+    BOOL ddNodeFlag = YES;
+    
 	NSAssert([NSStringFromClass([ddNode class]) isEqualToString:@"DDXMLInvalidNode"], @"Failed test 0");
 	
-	NSAssert([nsNode kind] == NSXMLInvalidKind, @"Failed CHECK 1a");
-	NSAssert([ddNode kind] == DDXMLInvalidKind, @"Failed test 1a");
+    nsNodeFlag = [nsNode respondsToSelector:@selector(kind)];
+	NSAssert(!nsNodeFlag, @"Failed CHECK 1a");
+    ddNodeFlag = [ddNode respondsToSelector:@selector(kind)];
+	NSAssert(!ddNodeFlag, @"Failed test 1a");
 	
-	NSString *nsName = [nsNode name];
-	NSString *ddName = [ddNode name];
-	
-	NSAssert(nsName == nil && ddName == nil, @"Failed test 2 - ns(%@) dd(%@)", nsName, ddName);
-	
+    nsNodeFlag = YES;
+    ddNodeFlag = YES;
+    nsNodeFlag = [nsNode respondsToSelector:@selector(name)];
+    ddNodeFlag = [ddNode respondsToSelector:@selector(name)];
+	NSAssert(!nsNodeFlag && !ddNodeFlag, @"Failed test 2");
+
 	NSString *nsDesc = [nsNode description];
-	NSString *ddDesc = [ddNode description];
-	
-	NSAssert(nsDesc && [nsDesc isEqualToString:ddDesc], @"Failed test 3 - ns(%@) dd(%@)", nsDesc, ddDesc);	
+    NSAssert([nsDesc rangeOfString:@"Placeholder"].location != NSNotFound, @"Failed test 3 - ns(%@)", nsDesc);
+
+    NSString *ddDesc = [ddNode description];
+    NSAssert([ddDesc rangeOfString:@"Placeholder"].location != NSNotFound, @"Failed test 4 - ns(%@)", ddDesc);
 }}
 
 @end
