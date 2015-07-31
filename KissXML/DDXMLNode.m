@@ -248,7 +248,7 @@ static void MarkDeath(void *xmlPtr, DDXMLNode *wrapper);
 	}
 	else
 	{
-		return [[DDXMLInvalidNode alloc] init];
+		return (DDXMLNode *)[[DDXMLInvalidNode alloc] init];
 	}
 }
 
