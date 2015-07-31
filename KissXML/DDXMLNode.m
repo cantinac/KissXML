@@ -30,6 +30,22 @@
  * https://github.com/robbiehanson/KissXML/wiki/Reference
 **/
 
+DDXMLNodeKind const DDXMLInvalidKind = 0;
+DDXMLNodeKind const DDXMLDocumentKind = XML_DOCUMENT_NODE;
+DDXMLNodeKind const DDXMLElementKind = XML_ELEMENT_NODE;
+DDXMLNodeKind const DDXMLAttributeKind = XML_ATTRIBUTE_NODE;
+DDXMLNodeKind const DDXMLNamespaceKind = XML_NAMESPACE_DECL;
+DDXMLNodeKind const DDXMLProcessingInstructionKind = XML_PI_NODE;
+DDXMLNodeKind const DDXMLCommentKind = XML_COMMENT_NODE;
+DDXMLNodeKind const DDXMLTextKind = XML_TEXT_NODE;
+DDXMLNodeKind const DDXMLDTDKind = XML_DTD_NODE;
+DDXMLNodeKind const DDXMLEntityDeclarationKind = XML_ENTITY_DECL;
+DDXMLNodeKind const DDXMLAttributeDeclarationKind = XML_ATTRIBUTE_DECL;
+DDXMLNodeKind const DDXMLElementDeclarationKind = XML_ELEMENT_DECL;
+DDXMLNodeKind const DDXMLNotationDeclarationKind = XML_NOTATION_NODE;
+DDXMLNodeKind const DDXMLCdataSectionKind = XML_CDATA_SECTION_NODE;
+
+
 @implementation DDXMLNode
 
 static void MyErrorHandler(void * userData, xmlErrorPtr error);

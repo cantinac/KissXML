@@ -21,23 +21,22 @@
  * https://github.com/robbiehanson/KissXML/wiki/Reference
 **/
 
-enum {
-    DDXMLInvalidKind                = 0,
-    DDXMLDocumentKind               = XML_DOCUMENT_NODE,
-    DDXMLElementKind                = XML_ELEMENT_NODE,
-    DDXMLAttributeKind              = XML_ATTRIBUTE_NODE,
-    DDXMLNamespaceKind              = XML_NAMESPACE_DECL,
-    DDXMLProcessingInstructionKind  = XML_PI_NODE,
-    DDXMLCommentKind                = XML_COMMENT_NODE,
-    DDXMLTextKind                   = XML_TEXT_NODE,
-    DDXMLDTDKind                    = XML_DTD_NODE,
-    DDXMLEntityDeclarationKind      = XML_ENTITY_DECL,
-    DDXMLAttributeDeclarationKind   = XML_ATTRIBUTE_DECL,
-    DDXMLElementDeclarationKind     = XML_ELEMENT_DECL,
-    DDXMLNotationDeclarationKind    = XML_NOTATION_NODE,
-    DDXMLCdataSectionKind           = XML_CDATA_SECTION_NODE
-};
 typedef NSUInteger DDXMLNodeKind;
+
+extern DDXMLNodeKind const DDXMLInvalidKind;
+extern DDXMLNodeKind const DDXMLDocumentKind;
+extern DDXMLNodeKind const DDXMLElementKind;
+extern DDXMLNodeKind const DDXMLAttributeKind;
+extern DDXMLNodeKind const DDXMLNamespaceKind;
+extern DDXMLNodeKind const DDXMLProcessingInstructionKind;
+extern DDXMLNodeKind const DDXMLCommentKind;
+extern DDXMLNodeKind const DDXMLTextKind;
+extern DDXMLNodeKind const DDXMLDTDKind;
+extern DDXMLNodeKind const DDXMLEntityDeclarationKind;
+extern DDXMLNodeKind const DDXMLAttributeDeclarationKind;
+extern DDXMLNodeKind const DDXMLElementDeclarationKind;
+extern DDXMLNodeKind const DDXMLNotationDeclarationKind;
+extern DDXMLNodeKind const DDXMLCdataSectionKind;
 
 enum {
 	DDXMLNodeOptionsNone            = 0,
