@@ -75,35 +75,39 @@ typedef struct _xmlStd *xmlStdPtr;
 
 NS_INLINE BOOL IsXmlAttrPtr(void *kindPtr)
 {
-	return ((xmlKindPtr)kindPtr)->type == XML_ATTRIBUTE_NODE;
+	return ((xmlKindPtr)kindPtr)->type == DDXMLAttributeKind;
 }
 
 NS_INLINE BOOL IsXmlNodePtr(void *kindPtr)
 {
-	switch (((xmlKindPtr)kindPtr)->type)
-	{
-		case XML_ELEMENT_NODE       :
-		case XML_PI_NODE            :
-		case XML_COMMENT_NODE       :
-		case XML_TEXT_NODE          :
-		case XML_CDATA_SECTION_NODE : return YES;
-		default                     : return NO;
-	}
+    BOOL flag = NO;
+    DDXMLNodeKind t = ((xmlKindPtr)kindPtr)->type;
+
+    if (   DDXMLElementKind               == t
+        || DDXMLProcessingInstructionKind == t
+        || DDXMLCommentKind               == t
+        || DDXMLTextKind                  == t
+        || DDXMLCdataSectionKind          == t )
+    {
+        flag = YES;
+    }
+
+    return flag;
 }
 
 NS_INLINE BOOL IsXmlDocPtr(void *kindPtr)
 {
-	return ((xmlKindPtr)kindPtr)->type == XML_DOCUMENT_NODE;
+	return ((xmlKindPtr)kindPtr)->type == DDXMLDocumentKind;
 }
 
 NS_INLINE BOOL IsXmlDtdPtr(void *kindPtr)
 {
-	return ((xmlKindPtr)kindPtr)->type == XML_DTD_NODE;
+	return ((xmlKindPtr)kindPtr)->type == DDXMLDTDKind;
 }
 
 NS_INLINE BOOL IsXmlNsPtr(void *kindPtr)
 {
-	return ((xmlKindPtr)kindPtr)->type == XML_NAMESPACE_DECL;
+	return ((xmlKindPtr)kindPtr)->type == DDXMLNamespaceKind;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
