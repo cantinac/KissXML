@@ -47,10 +47,6 @@ enum {
 	DDXMLNodePrettyPrint            = 1 << 17,
 };
 
-
-//extern struct _xmlKind;
-
-
 @interface DDXMLNode : NSObject <NSCopying>
 {
 	// Every DDXML object is simply a wrapper around an underlying libxml node

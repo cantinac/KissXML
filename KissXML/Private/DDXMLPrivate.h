@@ -35,8 +35,6 @@
 
 #define DDLastErrorKey @"DDXML:LastError"
 
-
-
 /**
  * DDXMLNode can represent several underlying types, such as xmlNodePtr, xmlDocPtr, xmlAttrPtr, xmlNsPtr, etc.
  * All of these are pointers to structures, and all of those structures start with a pointer, and a type.

@@ -204,7 +204,7 @@ static DDAssertionHandler *ddAssertionHandler;
 	
 	NSString *nsTest5 = [NSXMLNode localNameForName:nil];
 	NSString *ddTest5 = [DDXMLNode localNameForName:nil];
-	
+
 	NSAssert(!nsTest5 && !ddTest5, @"Failed test 5");
 	
 	NSXMLNode *nsNode = [NSXMLNode namespaceWithName:@"tucker" stringValue:@"dog"];
