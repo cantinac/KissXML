@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name    = 'KissXML'
-  s.version = '5.5'
+  s.version = '5.5.1'
 
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.9'
@@ -20,4 +20,5 @@ Pod::Spec.new do |s|
   s.libraries            = 'xml2'
   s.pod_target_xcconfig  = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
   s.user_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
+
 end
