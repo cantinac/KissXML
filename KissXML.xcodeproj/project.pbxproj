@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		5779FACF1B6FDB04002B595B /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AE9A9D1B6BD14F002375BD /* KissXML.framework */; };
 		57AE9AA01B6BD150002375BD /* KissXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 57AE9A9F1B6BD150002375BD /* KissXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57AE9AA51B6BD29B002375BD /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC05A431361DB8200993C2A /* NSString+DDXML.m */; };
 		57AE9AA61B6BD2A5002375BD /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC05A461361DB8200993C2A /* DDXMLDocument.m */; };
@@ -35,7 +36,6 @@
 		57AE9AC71B6BD9E9002375BD /* DDXMLElementAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC05A3F1361DB8200993C2A /* DDXMLElementAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57AE9AC81B6BD9E9002375BD /* NSString+DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC05A421361DB8200993C2A /* NSString+DDXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57AE9AC91B6BD9E9002375BD /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC05A4C1361DB8200993C2A /* DDXMLPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		57AE9AD21B6BDAE3002375BD /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AE9A9D1B6BD14F002375BD /* KissXML.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		DC54426E0E8F33E100013051 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC54426D0E8F33E100013051 /* AppDelegate.m */; };
@@ -102,8 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5779FACF1B6FDB04002B595B /* KissXML.framework in Frameworks */,
 				57AE9AB51B6BD492002375BD /* Cocoa.framework in Frameworks */,
-				57AE9AD21B6BDAE3002375BD /* KissXML.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
