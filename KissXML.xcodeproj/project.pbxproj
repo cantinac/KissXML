@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		5779FACF1B6FDB04002B595B /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AE9A9D1B6BD14F002375BD /* KissXML.framework */; };
+		5799A9221B6FEFCB000FCD95 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC05A461361DB8200993C2A /* DDXMLDocument.m */; };
+		5799A9231B6FEFCE000FCD95 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC05A481361DB8200993C2A /* DDXMLElement.m */; };
+		5799A9241B6FEFD2000FCD95 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC05A401361DB8200993C2A /* DDXMLElementAdditions.m */; };
+		5799A9251B6FEFD7000FCD95 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC05A431361DB8200993C2A /* NSString+DDXML.m */; };
+		5799A9261B6FF057000FCD95 /* DDXMLPrivate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCC05A4C1361DB8200993C2A /* DDXMLPrivate.h */; };
+		5799A9271B6FF057000FCD95 /* KissXML.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57AE9A9F1B6BD150002375BD /* KissXML.h */; };
+		5799A9281B6FF057000FCD95 /* DDXML.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCC05A441361DB8200993C2A /* DDXML.h */; };
+		5799A9291B6FF057000FCD95 /* DDXMLDocument.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCC05A451361DB8200993C2A /* DDXMLDocument.h */; };
+		5799A92A1B6FF057000FCD95 /* DDXMLElement.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCC05A471361DB8200993C2A /* DDXMLElement.h */; };
+		5799A92B1B6FF057000FCD95 /* DDXMLNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCC05A491361DB8200993C2A /* DDXMLNode.h */; };
+		5799A92C1B6FF057000FCD95 /* DDXMLElementAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCC05A3F1361DB8200993C2A /* DDXMLElementAdditions.h */; };
+		5799A92D1B6FF057000FCD95 /* NSString+DDXML.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCC05A421361DB8200993C2A /* NSString+DDXML.h */; };
 		57AE9AA01B6BD150002375BD /* KissXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 57AE9A9F1B6BD150002375BD /* KissXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57AE9AA51B6BD29B002375BD /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC05A431361DB8200993C2A /* NSString+DDXML.m */; };
 		57AE9AA61B6BD2A5002375BD /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC05A461361DB8200993C2A /* DDXMLDocument.m */; };
@@ -52,12 +64,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5799A9171B6FEF06000FCD95 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				5799A9261B6FF057000FCD95 /* DDXMLPrivate.h in CopyFiles */,
+				5799A9271B6FF057000FCD95 /* KissXML.h in CopyFiles */,
+				5799A9281B6FF057000FCD95 /* DDXML.h in CopyFiles */,
+				5799A9291B6FF057000FCD95 /* DDXMLDocument.h in CopyFiles */,
+				5799A92A1B6FF057000FCD95 /* DDXMLElement.h in CopyFiles */,
+				5799A92B1B6FF057000FCD95 /* DDXMLNode.h in CopyFiles */,
+				5799A92C1B6FF057000FCD95 /* DDXMLElementAdditions.h in CopyFiles */,
+				5799A92D1B6FF057000FCD95 /* NSString+DDXML.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* KissXML_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KissXML_Prefix.pch; sourceTree = "<group>"; };
+		5799A9191B6FEF06000FCD95 /* libKissXML.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKissXML.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		57AE9A9D1B6BD14F002375BD /* KissXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KissXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57AE9A9F1B6BD150002375BD /* KissXML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KissXML.h; sourceTree = "<group>"; };
 		57AE9AA11B6BD150002375BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +117,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5799A9161B6FEF06000FCD95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		57AE9A991B6BD14F002375BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,6 +167,7 @@
 				8D1107320486CEB800E47090 /* KissXMLTest.app */,
 				57AE9A9D1B6BD14F002375BD /* KissXML.framework */,
 				57AE9ACE1B6BD9E9002375BD /* KissXML.framework */,
+				5799A9191B6FEF06000FCD95 /* libKissXML.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -269,6 +310,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		5799A9181B6FEF06000FCD95 /* KissXML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5799A91F1B6FEF06000FCD95 /* Build configuration list for PBXNativeTarget "KissXML" */;
+			buildPhases = (
+				5799A9151B6FEF06000FCD95 /* Sources */,
+				5799A9161B6FEF06000FCD95 /* Frameworks */,
+				5799A9171B6FEF06000FCD95 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KissXML;
+			productName = KissXML;
+			productReference = 5799A9191B6FEF06000FCD95 /* libKissXML.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		57AE9A9C1B6BD14F002375BD /* KissXML (osx) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57AE9AA21B6BD150002375BD /* Build configuration list for PBXNativeTarget "KissXML (osx)" */;
@@ -332,6 +390,9 @@
 			attributes = {
 				LastUpgradeCheck = 0700;
 				TargetAttributes = {
+					5799A9181B6FEF06000FCD95 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					57AE9A9C1B6BD14F002375BD = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -351,6 +412,7 @@
 				8D1107260486CEB800E47090 /* KissXMLTest */,
 				57AE9A9C1B6BD14F002375BD /* KissXML (osx) */,
 				57AE9AB91B6BD9E9002375BD /* KissXML (ios) */,
+				5799A9181B6FEF06000FCD95 /* KissXML */,
 			);
 		};
 /* End PBXProject section */
@@ -382,6 +444,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5799A9151B6FEF06000FCD95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5799A9231B6FEFCE000FCD95 /* DDXMLElement.m in Sources */,
+				5799A9221B6FEFCB000FCD95 /* DDXMLDocument.m in Sources */,
+				5799A9241B6FEFD2000FCD95 /* DDXMLElementAdditions.m in Sources */,
+				5799A9251B6FEFD7000FCD95 /* NSString+DDXML.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		57AE9A981B6BD14F002375BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -448,6 +521,85 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5799A9201B6FEF06000FCD95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5799A9211B6FEF06000FCD95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		57AE9AA31B6BD150002375BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -728,6 +880,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5799A91F1B6FEF06000FCD95 /* Build configuration list for PBXNativeTarget "KissXML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5799A9201B6FEF06000FCD95 /* Debug */,
+				5799A9211B6FEF06000FCD95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		57AE9AA21B6BD150002375BD /* Build configuration list for PBXNativeTarget "KissXML (osx)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
