@@ -68,8 +68,8 @@
 		5799A9171B6FEF06000FCD95 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
+			dstPath = "$(SYMROOT)/include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 0;
 			files = (
 				5799A9261B6FF057000FCD95 /* DDXMLPrivate.h in CopyFiles */,
 				5799A9271B6FF057000FCD95 /* KissXML.h in CopyFiles */,
