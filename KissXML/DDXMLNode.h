@@ -23,20 +23,20 @@
 
 typedef NSUInteger DDXMLNodeKind;
 
-extern DDXMLNodeKind const DDXMLInvalidKind;
-extern DDXMLNodeKind const DDXMLDocumentKind;
-extern DDXMLNodeKind const DDXMLElementKind;
-extern DDXMLNodeKind const DDXMLAttributeKind;
-extern DDXMLNodeKind const DDXMLNamespaceKind;
-extern DDXMLNodeKind const DDXMLProcessingInstructionKind;
-extern DDXMLNodeKind const DDXMLCommentKind;
-extern DDXMLNodeKind const DDXMLTextKind;
-extern DDXMLNodeKind const DDXMLDTDKind;
-extern DDXMLNodeKind const DDXMLEntityDeclarationKind;
-extern DDXMLNodeKind const DDXMLAttributeDeclarationKind;
-extern DDXMLNodeKind const DDXMLElementDeclarationKind;
-extern DDXMLNodeKind const DDXMLNotationDeclarationKind;
-extern DDXMLNodeKind const DDXMLCdataSectionKind;
+DDXMLNodeKind const DDXMLInvalidKind;
+DDXMLNodeKind const DDXMLDocumentKind;
+DDXMLNodeKind const DDXMLElementKind;
+DDXMLNodeKind const DDXMLAttributeKind;
+DDXMLNodeKind const DDXMLNamespaceKind;
+DDXMLNodeKind const DDXMLProcessingInstructionKind;
+DDXMLNodeKind const DDXMLCommentKind;
+DDXMLNodeKind const DDXMLTextKind;
+DDXMLNodeKind const DDXMLDTDKind;
+DDXMLNodeKind const DDXMLEntityDeclarationKind;
+DDXMLNodeKind const DDXMLAttributeDeclarationKind;
+DDXMLNodeKind const DDXMLElementDeclarationKind;
+DDXMLNodeKind const DDXMLNotationDeclarationKind;
+DDXMLNodeKind const DDXMLCdataSectionKind;
 
 enum {
 	DDXMLNodeOptionsNone            = 0,
