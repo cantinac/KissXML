@@ -1,0 +1,3 @@
+[submodule "Vendor/xml"]
+	path = Vendor/xml
+	url = https://github.com/cantinac/libxml2-module-clang.git
