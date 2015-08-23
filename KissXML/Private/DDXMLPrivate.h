@@ -1,8 +1,15 @@
 
-#include <libxml/tree.h>
-#include <libxml/xmlstring.h>
+#import <Foundation/Foundation.h>
 
-#import <KissXML/DDXMLDocument.h>
+#if __has_feature(modules) && \
+(  (TARGET_OS_IPHONE && __IPHONE_OS_VERSION_MIN_REQUIRED >= 80000) \
+|| (__MAC_OS_X_VERSION_MIN_REQUIRED >= 1090) )
+@import xml;
+#else
+#import <libxml/tree.h>
+#endif
+
+#import "DDXMLDocument.h"
 
 // We can't rely solely on NSAssert, because many developers disable them for release builds.
 // Our API contract requires us to keep these assertions intact.

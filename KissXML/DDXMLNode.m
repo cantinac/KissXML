@@ -1,16 +1,23 @@
 
-#include <libxml/tree.h>
-#include <libxml/xpath.h>
-#include <libxml/xpathInternals.h>
-
-#import <KissXML/DDXMLNode.h>
-
-#import <KissXML/DDXMLPrivate.h>
-#import <KissXML/NSString+DDXML.h>
+#import "DDXMLNode.h"
 
 #if ! __has_feature(objc_arc)
 #warning This file must be compiled with ARC. Use -fobjc-arc flag (or convert project to ARC).
 #endif
+
+#if __has_feature(modules) && \
+(  (TARGET_OS_IPHONE && __IPHONE_OS_VERSION_MIN_REQUIRED >= 80000) \
+|| (__MAC_OS_X_VERSION_MIN_REQUIRED >= 1090) )
+@import xml;
+#else
+#import <libxml/tree.h>
+#import <libxml/xpath.h>
+#import <libxml/xpathInternals.h>
+#endif
+
+#import "DDXMLPrivate.h"
+#import "NSString+DDXML.h"
+
 
 /**
  * Welcome to KissXML.

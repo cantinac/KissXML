@@ -1,14 +1,14 @@
 
-#import <KissXML/DDXMLElement.h>
-
-#import <KissXML/DDXMLPrivate.h>
-#import <KissXML/DDXMLDocument.h>
-#import <KissXML/NSString+DDXML.h>
-
+#import "DDXMLElement.h"
 
 #if ! __has_feature(objc_arc)
 #warning This file must be compiled with ARC. Use -fobjc-arc flag (or convert project to ARC).
 #endif
+
+#import "DDXMLPrivate.h"
+#import "DDXMLDocument.h"
+#import "NSString+DDXML.h"
+
 
 /**
  * Welcome to KissXML.
