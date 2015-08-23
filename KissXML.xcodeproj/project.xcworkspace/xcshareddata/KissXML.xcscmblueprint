@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "70A8537565E8EBD1B9D364933832E742DD9D1D11",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "70A8537565E8EBD1B9D364933832E742DD9D1D11" : 0,
+    "C4325005782FB568AA4BB9F2504FCCDABA459FC9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "326519CA-8EF0-41EE-9A9B-B842DA8C0E10",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "70A8537565E8EBD1B9D364933832E742DD9D1D11" : "KissXML\/",
+    "C4325005782FB568AA4BB9F2504FCCDABA459FC9" : "xml\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "KissXML",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "KissXML.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:cantinac\/KissXML.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "70A8537565E8EBD1B9D364933832E742DD9D1D11"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:cantinac\/libxml2-module-clang.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C4325005782FB568AA4BB9F2504FCCDABA459FC9"
+    }
+  ]
+}
