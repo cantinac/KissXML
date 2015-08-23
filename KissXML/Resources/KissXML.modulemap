@@ -1,0 +1,19 @@
+framework module KissXML {
+    umbrella header "KissXML.h"
+
+    use xml
+
+    export *
+    module * { export * }
+
+    textual header "DDXML.h"
+    
+    config_macros [exhaustive] KISSXML_AS_NSXML
+    
+    explicit module Private {
+        header "DDXMLPrivate.h"
+        export *
+    }
+    
+    link framework "xml"
+}
