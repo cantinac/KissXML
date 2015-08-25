@@ -8,7 +8,11 @@
 
 #import "AppDelegate.h"
 
+#if LIBKISSXML
+#import "KissXML/KissXML.h"
+#else
 @import KissXML;
+#endif
 
 @interface AppDelegate ()
 
