@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		570BEA8B1B8DF83600A1E65D /* xml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BEA841B8DF81100A1E65D /* xml.framework */; };
+		570BEA8C1B8DF85200A1E65D /* xml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BEA821B8DF81100A1E65D /* xml.framework */; };
 		5779FACF1B6FDB04002B595B /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AE9A9D1B6BD14F002375BD /* KissXML.framework */; };
 		5793F4FC1B791CA8006CCEA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793F4FB1B791CA8006CCEA1 /* main.m */; };
 		5793F4FF1B791CA8006CCEA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793F4FE1B791CA8006CCEA1 /* AppDelegate.m */; };
@@ -28,8 +30,6 @@
 		5799A92C1B6FF057000FCD95 /* DDXMLElementAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCC05A3F1361DB8200993C2A /* DDXMLElementAdditions.h */; };
 		5799A92D1B6FF057000FCD95 /* NSString+DDXML.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCC05A421361DB8200993C2A /* NSString+DDXML.h */; };
 		5799A9B91B711667000FCD95 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC05A4A1361DB8200993C2A /* DDXMLNode.m */; };
-		579CF2CE1B8A30F000FA62A5 /* xml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579CF2CD1B8A30F000FA62A5 /* xml.framework */; };
-		579CF2D01B8A30F700FA62A5 /* xml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579CF2CF1B8A30F700FA62A5 /* xml.framework */; };
 		579CF2D51B8A31D900FA62A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793F5011B791CA8006CCEA1 /* ViewController.m */; };
 		579CF2D61B8A31D900FA62A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793F4FE1B791CA8006CCEA1 /* AppDelegate.m */; };
 		579CF2D71B8A31D900FA62A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793F4FB1B791CA8006CCEA1 /* main.m */; };
@@ -73,6 +73,48 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		570BEA811B8DF81100A1E65D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 570BEA7A1B8DF81000A1E65D /* xml.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 577F12991B7A44D3005B54C8;
+			remoteInfo = "xml (ios)";
+		};
+		570BEA831B8DF81100A1E65D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 570BEA7A1B8DF81000A1E65D /* xml.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57C806D21B7A66AA00E4541A;
+			remoteInfo = "xml (osx)";
+		};
+		570BEA851B8DF81100A1E65D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 570BEA7A1B8DF81000A1E65D /* xml.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 577F12AC1B7A469C005B54C8;
+			remoteInfo = "ios-linktest";
+		};
+		570BEA871B8DF81100A1E65D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 570BEA7A1B8DF81000A1E65D /* xml.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57C806B21B7A60FC00E4541A;
+			remoteInfo = "osx-linktest";
+		};
+		570BEA891B8DF82800A1E65D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 570BEA7A1B8DF81000A1E65D /* xml.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 57C806D11B7A66AA00E4541A;
+			remoteInfo = "xml (osx)";
+		};
+		570BEA8D1B8DF85900A1E65D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 570BEA7A1B8DF81000A1E65D /* xml.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 577F12981B7A44D3005B54C8;
+			remoteInfo = "xml (ios)";
+		};
 		57AE9AD01B6BDA08002375BD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -136,6 +178,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* KissXML_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KissXML_Prefix.pch; sourceTree = "<group>"; };
 		570BEA6A1B8DF58100A1E65D /* xml_search_paths.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = xml_search_paths.xcconfig; path = Vendor/xml/xml/xml_search_paths.xcconfig; sourceTree = SOURCE_ROOT; };
+		570BEA7A1B8DF81000A1E65D /* xml.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = xml.xcodeproj; path = Vendor/xml/xml.xcodeproj; sourceTree = "<group>"; };
 		5793F4F31B791BE4006CCEA1 /* KissXML.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = KissXML.modulemap; sourceTree = "<group>"; };
 		5793F4F81B791CA8006CCEA1 /* KissXMLTest-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KissXMLTest-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5793F4FB1B791CA8006CCEA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -204,7 +247,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				579CF2CE1B8A30F000FA62A5 /* xml.framework in Frameworks */,
+				570BEA8B1B8DF83600A1E65D /* xml.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +255,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				579CF2D01B8A30F700FA62A5 /* xml.framework in Frameworks */,
+				570BEA8C1B8DF85200A1E65D /* xml.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +298,7 @@
 		29B97314FDCFA39411CA2CEA /* KissXML */ = {
 			isa = PBXGroup;
 			children = (
+				570BEA7A1B8DF81000A1E65D /* xml.xcodeproj */,
 				DCC05A3D1361DB8200993C2A /* KissXMLTest */,
 				5793F4F91B791CA8006CCEA1 /* KissXMLTest-iOS */,
 				57AE9A9E1B6BD150002375BD /* KissXML */,
@@ -292,6 +336,17 @@
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		570BEA7B1B8DF81000A1E65D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				570BEA821B8DF81100A1E65D /* xml.framework */,
+				570BEA841B8DF81100A1E65D /* xml.framework */,
+				570BEA861B8DF81100A1E65D /* ios-linktest.app */,
+				570BEA881B8DF81100A1E65D /* osx-linktest.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		5793F4F91B791CA8006CCEA1 /* KissXMLTest-iOS */ = {
@@ -484,6 +539,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				570BEA8A1B8DF82800A1E65D /* PBXTargetDependency */,
 			);
 			name = "KissXML (osx)";
 			productName = KissXML;
@@ -504,6 +560,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				570BEA8E1B8DF85900A1E65D /* PBXTargetDependency */,
 			);
 			name = "KissXML (ios)";
 			productName = KissXML;
@@ -558,6 +615,12 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* KissXML */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 570BEA7B1B8DF81000A1E65D /* Products */;
+					ProjectRef = 570BEA7A1B8DF81000A1E65D /* xml.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* KissXMLTest */,
@@ -569,6 +632,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		570BEA821B8DF81100A1E65D /* xml.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = xml.framework;
+			remoteRef = 570BEA811B8DF81100A1E65D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		570BEA841B8DF81100A1E65D /* xml.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = xml.framework;
+			remoteRef = 570BEA831B8DF81100A1E65D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		570BEA861B8DF81100A1E65D /* ios-linktest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "ios-linktest.app";
+			remoteRef = 570BEA851B8DF81100A1E65D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		570BEA881B8DF81100A1E65D /* osx-linktest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "osx-linktest.app";
+			remoteRef = 570BEA871B8DF81100A1E65D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5793F4F61B791CA8006CCEA1 /* Resources */ = {
@@ -703,6 +797,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		570BEA8A1B8DF82800A1E65D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "xml (osx)";
+			targetProxy = 570BEA891B8DF82800A1E65D /* PBXContainerItemProxy */;
+		};
+		570BEA8E1B8DF85900A1E65D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "xml (ios)";
+			targetProxy = 570BEA8D1B8DF85900A1E65D /* PBXContainerItemProxy */;
+		};
 		57AE9AD11B6BDA08002375BD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 57AE9A9C1B6BD14F002375BD /* KissXML (osx) */;
