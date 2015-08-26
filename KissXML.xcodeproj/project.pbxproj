@@ -135,6 +135,7 @@
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* KissXML_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KissXML_Prefix.pch; sourceTree = "<group>"; };
+		570BEA6A1B8DF58100A1E65D /* xml_search_paths.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = xml_search_paths.xcconfig; path = Vendor/xml/xml/xml_search_paths.xcconfig; sourceTree = SOURCE_ROOT; };
 		5793F4F31B791BE4006CCEA1 /* KissXML.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = KissXML.modulemap; sourceTree = "<group>"; };
 		5793F4F81B791CA8006CCEA1 /* KissXMLTest-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KissXMLTest-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5793F4FB1B791CA8006CCEA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -155,7 +156,6 @@
 		57AE9AA11B6BD150002375BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57AE9AB41B6BD492002375BD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		57AE9ACE1B6BD9E9002375BD /* KissXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KissXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		57C807031B7B974600E4541A /* xml_search_paths.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = xml_search_paths.xcconfig; path = ../xml/xml/xml_search_paths.xcconfig; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* KissXMLTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KissXMLTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC54426C0E8F33E100013051 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -321,7 +321,7 @@
 		57AE9A9E1B6BD150002375BD /* KissXML */ = {
 			isa = PBXGroup;
 			children = (
-				57C807031B7B974600E4541A /* xml_search_paths.xcconfig */,
+				570BEA6A1B8DF58100A1E65D /* xml_search_paths.xcconfig */,
 				57AE9AB61B6BD4DC002375BD /* Resources */,
 				57AE9A9F1B6BD150002375BD /* KissXML.h */,
 				DCC05A441361DB8200993C2A /* DDXML.h */,
@@ -1296,7 +1296,7 @@
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57C807031B7B974600E4541A /* xml_search_paths.xcconfig */;
+			baseConfigurationReference = 570BEA6A1B8DF58100A1E65D /* xml_search_paths.xcconfig */;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1315,7 +1315,7 @@
 		};
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57C807031B7B974600E4541A /* xml_search_paths.xcconfig */;
+			baseConfigurationReference = 570BEA6A1B8DF58100A1E65D /* xml_search_paths.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
