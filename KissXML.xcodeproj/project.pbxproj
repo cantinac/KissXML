@@ -1182,6 +1182,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MODULEMAP_FILE = "$(PROJECT_DIR)/KissXML/Resources/KissXML.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_CFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KissXML;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = macosx;
@@ -1234,6 +1235,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MODULEMAP_FILE = "$(PROJECT_DIR)/KissXML/Resources/KissXML.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KissXML;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = macosx;
@@ -1291,7 +1293,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "$(PROJECT_DIR)/KissXML/Resources/KissXML.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_CFLAGS = "-DKISSXML_AS_NSXML=1";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DKISSXML_AS_NSXML=1",
+				);
+				"OTHER_CFLAGS[sdk=iphoneos*]" = "$(inherited)";
+				"OTHER_CFLAGS[sdk=iphonesimulator*]" = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KissXML;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1346,7 +1353,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "$(PROJECT_DIR)/KissXML/Resources/KissXML.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_CFLAGS = "-DKISSXML_AS_NSXML=1";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DKISSXML_AS_NSXML=1",
+				);
+				"OTHER_CFLAGS[sdk=iphoneos*]" = "$(inherited)";
+				"OTHER_CFLAGS[sdk=iphonesimulator9.0]" = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KissXML;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				PROVISIONING_PROFILE = "";

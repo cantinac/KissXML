@@ -20,7 +20,8 @@
 #import "DDXMLElement.h"
 #import "DDXMLDocument.h"
 
-#if TARGET_OS_IPHONE && KISSXML_AS_NSXML
+#if TARGET_OS_IPHONE
+#if KISSXML_AS_NSXML
 // Disabled by default
 
 // Since KissXML is a drop in replacement for NSXML,
@@ -92,8 +93,8 @@
   #define NSXMLNodePrettyPrint DDXMLNodePrettyPrint
 #endif
 
+#endif // #if KISSXML_AS_NSXML
 #endif // #if TARGET_OS_IPHONE
-
 
 
 // KissXML has rather straight-forward memory management:
