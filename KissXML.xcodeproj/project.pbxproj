@@ -1182,7 +1182,10 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MODULEMAP_FILE = "$(PROJECT_DIR)/KissXML/Resources/KissXML.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DKISSXML_AS_NSXML=0",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KissXML;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = macosx;
@@ -1235,7 +1238,10 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MODULEMAP_FILE = "$(PROJECT_DIR)/KissXML/Resources/KissXML.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DKISSXML_AS_NSXML=0",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KissXML;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = macosx;
